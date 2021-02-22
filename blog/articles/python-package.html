@@ -26,8 +26,8 @@
             <h3>准备工作</h3>
             <p>必须安装Python3，并确保可以使用pip工具！下方代码请在CMD中执行：</p>
             <code>
-                pip install --user --upgrade setuptools wheel
-                pip install --user --upgrade twine
+                pip install --user --upgrade setuptools wheel<br/>
+                pip install --user --upgrade twine<br/>
             </code>
             <h3>注册Pypi账号</h3>
             <a href='https://pypi.org/'>传送门</a>
@@ -36,33 +36,32 @@
             <h3>打包并上传</h3>
             <p>在文件夹下创建setup.py，并写入以下代码</p>
             <code>
-                import setuptools
-                with open("README.md", "r",encoding='utf-8') as fh:
-                long_description = fh.read()
-
-                setuptools.setup(
-                name="库名",
-                version="版本号",
-                author="作者",
-                author_email="电子邮箱",
-                description="简介",
-                long_description=long_description,
-                long_description_content_type="text/markdown",
-                url="项目网址",
-                packages=setuptools.find_packages(),
-                classifiers=[
-                "Programming Language :: Python :: 3",    #Python版本（2或3）
-                "License :: OSI Approved :: MIT License",   #开源许可
-                "Operating System :: OS Independent",
-                ],
+                import setuptools<br/>
+                with open("README.md", "r",encoding='utf-8') as fh:<br/>
+                long_description = fh.read()<br/>
+                setuptools.setup(<br/>
+                name="库名",<br/>
+                version="版本号",<br/>
+                author="作者",<br/>
+                author_email="电子邮箱",<br/>
+                description="简介",<br/>
+                long_description=long_description,<br/>
+                long_description_content_type="text/markdown",<br/>
+                url="项目网址",<br/>
+                packages=setuptools.find_packages(),<br/>
+                classifiers=[<br/>
+                "Programming Language :: Python :: 3",    #Python版本（2或3）<br/>
+                "License :: OSI Approved :: MIT License",   #开源许可<br/>
+                "Operating System :: OS Independent",<br/>
+                ],<br/>
                 )
             </code>
             <p>创建README.md，写入项目详细信息（Markdown格式），创建licence.md，写入开源许可证内容</p>
             <br/>
             <p>CMD cd到库文件夹，输入以下指令（注意，最后一步会要求输入Pypi账号密码）：</p>
             <code>
-                python setup.py sdist bdist_wheel
-                python twine upload dist/*
+                python setup.py sdist bdist_wheel<br/>
+                python twine upload dist/*<br/>
             </code>
             <h2>测试安装库</h2>
             <p>CMD输入指令</p>
