@@ -30,32 +30,12 @@
                 pip install --user --upgrade twine<br/>
             </code>
             <h3>注册Pypi账号</h3>
-            <a href='https://pypi.org/'>传送门</a>
+            <a href='https://pypi.org/' style='color:white;'>传送门</a>
             <h3>编写Python库程序（单独文件夹中）</h3>
             <p>不再赘述</p>
             <h3>打包并上传</h3>
             <p>在文件夹下创建setup.py，并写入以下代码</p>
-            <code>
-                import setuptools<br/>
-                with open("README.md", "r",encoding='utf-8') as fh:<br/>
-                    long_description = fh.read()<br/>
-                setuptools.setup(<br/>
-                    name="库名",<br/>
-                    version="版本号",<br/>
-                    author="作者",<br/>
-                    author_email="电子邮箱",<br/>
-                    description="简介",<br/>
-                    long_description=long_description,<br/>
-                    long_description_content_type="text/markdown",<br/>
-                    url="项目网址",<br/>
-                    packages=setuptools.find_packages(),<br/>
-                    classifiers=[<br/>
-                    "Programming Language :: Python :: 3",    #Python版本（2或3）<br/>
-                    "License :: OSI Approved :: MIT License",   #开源许可<br/>
-                    "Operating System :: OS Independent",<br/>
-                    ],<br/>
-                )
-            </code>
+            <a href='pypg.py' style='color:white;'>传送门</a>
             <p>创建README.md，写入项目详细信息（Markdown格式），创建licence.md，写入开源许可证内容</p>
             <br/>
             <p>CMD cd到库文件夹，输入以下指令（注意，最后一步会要求输入Pypi账号密码）：</p>
