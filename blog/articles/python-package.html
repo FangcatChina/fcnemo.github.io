@@ -38,22 +38,22 @@
             <code>
                 import setuptools<br/>
                 with open("README.md", "r",encoding='utf-8') as fh:<br/>
-                long_description = fh.read()<br/>
+                    long_description = fh.read()<br/>
                 setuptools.setup(<br/>
-                name="库名",<br/>
-                version="版本号",<br/>
-                author="作者",<br/>
-                author_email="电子邮箱",<br/>
-                description="简介",<br/>
-                long_description=long_description,<br/>
-                long_description_content_type="text/markdown",<br/>
-                url="项目网址",<br/>
-                packages=setuptools.find_packages(),<br/>
-                classifiers=[<br/>
-                "Programming Language :: Python :: 3",    #Python版本（2或3）<br/>
-                "License :: OSI Approved :: MIT License",   #开源许可<br/>
-                "Operating System :: OS Independent",<br/>
-                ],<br/>
+                    name="库名",<br/>
+                    version="版本号",<br/>
+                    author="作者",<br/>
+                    author_email="电子邮箱",<br/>
+                    description="简介",<br/>
+                    long_description=long_description,<br/>
+                    long_description_content_type="text/markdown",<br/>
+                    url="项目网址",<br/>
+                    packages=setuptools.find_packages(),<br/>
+                    classifiers=[<br/>
+                    "Programming Language :: Python :: 3",    #Python版本（2或3）<br/>
+                    "License :: OSI Approved :: MIT License",   #开源许可<br/>
+                    "Operating System :: OS Independent",<br/>
+                    ],<br/>
                 )
             </code>
             <p>创建README.md，写入项目详细信息（Markdown格式），创建licence.md，写入开源许可证内容</p>
