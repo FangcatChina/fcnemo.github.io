@@ -17,16 +17,29 @@
         </div>
     </head>
     <body>
-        <script>
-            window.onload=function(){
-                var d = document.getElementById('scroll')
-                setTimeOut(function(){
-                    d = innerHTML='<a href="pptos.html"><img src="assets/swift/ossp2015.png"></a>'
-                    setTimeOut(d = innerHTML='<a href="remake.html"><img src="assets/swift/wmrm.png"></a>',3000)
-                },3000)
-            }
-        </script>
-        <div id='scroll'> </div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"> </script>  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="/pptos.html"><img src="swift/ossp2015.png"></a></div>
+      <div class="swiper-slide"><a href="/remake.html"><img src="swift/wmrm.png"></a></div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
         <h2>我的作品</h2>
         <p>点击以访问作品介绍页</p>
         <h3 style="text-align:center;"><a href='pptos.html' style='color: black;'>FCUOS</a><br><a href='remake.html' style='color: black;'>Wormy Remake</a><br><a href='https://gitee.com/fcnemo/hbc' style='color: black;'>Hypixel Bedwars Chinese</a><br><a href='https://gitee.com/fcnemo/fcwos' style='color: black;'>FCWOS</a><a href='fcwos/index.html'><button>在线预览</button></a><br><a href='nosite.html' style='color: black;'>Fangcat Watch</a><br><a href='nosite.html' style='color: black;'>Minecraft RE</a></h3>
